@@ -1,0 +1,52 @@
+<h2>{{'newHardwareForm.title' | translate}}</h2>
+<div>
+  <h3>{{'newHardwareForm.text' | translate}}</h3>
+  <div>
+    <label>{{'newHardwareForm.code' | translate}}:
+      <div>
+        <input #code />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>{{'newHardwareForm.name' | translate}}:
+      <div>
+        <input #name />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>{{'newHardwareForm.type' | translate}}:
+      <div>
+        <select #type >
+          <option value="CPU">CPU</option>
+          <option value="GPU">GPU</option>
+          <option value="MBO">MBO</option>
+          <option value="RAM">RAM</option>
+          <option value="STORAGE">{{'newHardwareForm.dataStorage' | translate}}</option>
+          <option value="OTHER">{{'newHardwareForm.other' | translate}}</option>
+        </select>
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>{{'newHardwareForm.quantity' | translate}}:
+      <div>
+        <input type="number" #stock />
+      </div>
+    </label>
+  </div>
+  <div>
+    <label>{{'newHardwareForm.price' | translate}}:
+      <div>
+        <input type="number" #price />
+      </div>
+    </label>
+  </div>
+
+  <button (click)="add(code.value, name.value, type.value, +stock.value, +price.value); code.value=''; name.value=''; type.value='CPU'; stock.value=''; price.value=''">
+    {{'newHardwareForm.input' | translate}}
+  </button>
+
+  <button (click)="goBack()">{{'newHardwareForm.back' | translate}}</button>
+</div>

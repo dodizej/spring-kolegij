@@ -1,0 +1,29 @@
+
+
+<div class="container-fluid">
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <div  class="d-inline-block">
+        <div  aria-labelledby="languageDropdown">
+          <button class="btn-secondary"
+                  (click)="onLanguageChange('hr')">{{'language.croatian' | translate}}</button>
+          <button class="btn-secondary"
+                  (click)="onLanguageChange('en')">{{'language.english' | translate}}</button>
+          <button class="btn-secondary"
+                  (click)="onLanguageChange('fi')">{{'language.finnish' | translate}}</button>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="w-100 text-end" *ngIf="authenticationService.isUserAuthenticated()">{{'login.signedInAs' | translate}}
+        <strong>{{authenticationService.getAuthenticatedUserUsername()}}</strong> | <a href="#" (click)="logout()" class="link-primary">{{'login.logout' | translate}}</a>
+      </div>
+    </li>
+  </ul>
+
+
+  <div class="m-5">
+    <router-outlet></router-outlet>
+  </div>
+</div>

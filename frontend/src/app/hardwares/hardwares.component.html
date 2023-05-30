@@ -1,0 +1,16 @@
+<h2>{{'hardware' | translate}}</h2>
+<ul class="hardwares">
+  <li *ngFor="let hardware of hardwares">
+    <a routerLink="/detail/{{hardware.code}}">
+      <span class="badge">{{hardware.code}} 🖥️</span> {{hardware.name}}
+    </a>
+    <button *ngIf="isUserAdmin" class="delete" title="delete hardware"
+            (click)="delete(hardware)">x
+    </button>
+  </li>
+</ul>
+<div>
+  <button *ngIf="isUserAdmin" (click)="newHardware()">
+    {{'newHardware' | translate}}
+  </button>
+</div>

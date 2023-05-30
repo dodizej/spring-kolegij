@@ -1,0 +1,49 @@
+{
+  "language": {
+    "croatian": "Kroatia",
+    "english": "Englanti",
+    "finnish": "Suomalainen"
+  },
+  "login": {
+    "title": "Kirjaudu sisään",
+    "username": "Käyttäjätunnus",
+    "password": "Password",
+    "loginButton": "Salasana",
+    "loginError": "Kirjautuminen epäonnistui. Tarkista käyttäjätunnuksesi ja salasanasi ja yritä uudelleen.",
+    "usernameField": "Kirjoita käyttäjätunnus tähän",
+    "passwordField": "Kirjoita salasana tähän",
+    "signedInAs" : "Kirjautunut sisään nimellä",
+    "logout": "Kirjautua ulos"
+  },
+  "hardware": "Laitteisto",
+  "newHardware": "Syötä uusi laitteisto",
+  "newHardwareForm": {
+    "title": "Laitteiston syöttö",
+    "text": "Syötä uusi laitteisto",
+    "code": "Koodi",
+    "name": "Nimi",
+    "type": "Tyyppi",
+    "quantity": "Määrä",
+    "price":  "Hinta",
+    "input": "Syöte",
+    "back": "Mene takaisin",
+    "dataStorage": "Tietovarasto",
+    "other": "Muut"
+  },
+  "hardwareDetail": {
+    "detailsAbout": "Tietoja aiheesta",
+    "price": "Price",
+    "reviews": "Arvostelut tälle laitteistolle",
+    "back": "Mene takaisin",
+    "noReviews": "Tällä hetkellä tälle laitteistolle ei ole annettu arvosteluja.",
+    "rates": "Voit maksaa tämän 6 kuukauden erässä."
+  },
+  "forbidden": {
+    "text": "Sinulla ei ole oikeuksia käyttää tätä sivustoa!",
+    "back": "Takaisin kotisivulle."
+  },
+  "notFound": {
+    "text": "Sivua ei löydetty!",
+    "back": "Takaisin kotisivulle."
+  }
+}
